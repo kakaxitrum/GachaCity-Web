@@ -1,0 +1,335 @@
+.rulesPage {
+  background: #0a0a0a;
+  min-height: 100vh;
+  color: #ffffff;
+}
+
+.hero {
+  background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+  padding: 8rem 0 6rem;
+  text-align: center;
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(45deg, #ffffff, #ff4444);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  color: #cccccc;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.notice {
+  padding: 3rem 0;
+  background: linear-gradient(180deg, #0a0a0a 0%, #111111 100%);
+}
+
+.noticeBox {
+  background: linear-gradient(145deg, rgba(255, 68, 68, 0.1), rgba(255, 68, 68, 0.05));
+  border: 2px solid rgba(255, 68, 68, 0.3);
+  border-radius: 16px;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.noticeIcon {
+  font-size: 3rem;
+  flex-shrink: 0;
+}
+
+.noticeContent h3 {
+  color: #ff4444;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.noticeContent p {
+  color: #cccccc;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.rulesSection {
+  padding: 4rem 0;
+  background: #111111;
+}
+
+.categoryCard {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  margin-bottom: 3rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.categoryCard:hover {
+  border-color: rgba(255, 68, 68, 0.3);
+  box-shadow: 0 15px 35px rgba(255, 68, 68, 0.1);
+}
+
+.categoryHeader {
+  background: linear-gradient(90deg, rgba(255, 68, 68, 0.2), rgba(255, 68, 68, 0.1));
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.categoryIcon {
+  font-size: 2.5rem;
+}
+
+.categoryTitle {
+  font-size: 1.8rem;
+  color: #ff4444;
+  font-weight: bold;
+  margin: 0;
+}
+
+.rulesList {
+  padding: 2rem;
+}
+
+.ruleItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 8px;
+  border-left: 3px solid #ff4444;
+  transition: all 0.3s ease;
+}
+
+.ruleItem:hover {
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateX(5px);
+}
+
+.ruleNumber {
+  color: #ff4444;
+  font-weight: bold;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  min-width: 25px;
+}
+
+.ruleText {
+  color: #cccccc;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.punishment {
+  padding: 5rem 0;
+  background: #0a0a0a;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 3rem;
+  font-weight: bold;
+}
+
+.punishmentGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.punishmentCard {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.punishmentCard:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 68, 68, 0.3);
+  box-shadow: 0 15px 30px rgba(255, 68, 68, 0.15);
+}
+
+.punishmentIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.punishmentCard h3 {
+  color: #ff4444;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.punishmentCard p {
+  color: #cccccc;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.punishmentDuration {
+  background: rgba(255, 68, 68, 0.2);
+  color: #ff4444;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  display: inline-block;
+}
+
+.appeals {
+  padding: 4rem 0;
+  background: linear-gradient(180deg, #111111 0%, #0a0a0a 100%);
+}
+
+.appealBox {
+  background: linear-gradient(145deg, rgba(255, 215, 0, 0.1), rgba(255, 215, 0, 0.05));
+  border: 2px solid rgba(255, 215, 0, 0.3);
+  border-radius: 16px;
+  padding: 3rem;
+  text-align: center;
+}
+
+.appealBox h3 {
+  color: #ffd700;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.appealBox p {
+  color: #cccccc;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.appealButtons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.discordBtn,
+.ticketBtn {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.discordBtn {
+  background: #5865f2;
+  color: #ffffff;
+}
+
+.discordBtn:hover {
+  background: #4752c4;
+  transform: translateY(-2px);
+}
+
+.ticketBtn {
+  background: transparent;
+  color: #ffd700;
+  border: 2px solid #ffd700;
+}
+
+.ticketBtn:hover {
+  background: #ffd700;
+  color: #000000;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 6rem 0 4rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .noticeBox {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .categoryHeader {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .categoryTitle {
+    font-size: 1.5rem;
+  }
+
+  .ruleItem {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .punishmentGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .appealButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .discordBtn,
+  .ticketBtn {
+    width: 100%;
+    max-width: 250px;
+  }
+}

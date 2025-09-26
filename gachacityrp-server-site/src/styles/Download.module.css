@@ -1,0 +1,472 @@
+.downloadPage {
+  background: #0a0a0a;
+  min-height: 100vh;
+  color: #ffffff;
+}
+
+.hero {
+  background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+  padding: 8rem 0 6rem;
+  text-align: center;
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(45deg, #ffffff, #00BCD4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  color: #cccccc;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.requirements {
+  padding: 5rem 0;
+  background: linear-gradient(180deg, #0a0a0a 0%, #111111 100%);
+}
+
+.requirements h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 3rem;
+  font-weight: bold;
+}
+
+.reqGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+}
+
+.reqCard {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2.5rem;
+  transition: all 0.3s ease;
+}
+
+.reqCard:hover {
+  transform: translateY(-5px);
+  border-color: rgba(0, 188, 212, 0.3);
+  box-shadow: 0 15px 35px rgba(0, 188, 212, 0.15);
+}
+
+.reqCard h3 {
+  color: #00BCD4;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.reqCard ul {
+  list-style: none;
+  padding: 0;
+}
+
+.reqCard li {
+  color: #cccccc;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+}
+
+.reqCard li:last-child {
+  border-bottom: none;
+}
+
+.steps {
+  padding: 5rem 0;
+  background: #111111;
+}
+
+.steps h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 4rem;
+  font-weight: bold;
+}
+
+.stepsContainer {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.step {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+  border-radius: 16px;
+  border-left: 4px solid #00BCD4;
+  transition: all 0.3s ease;
+}
+
+.step:hover {
+  transform: translateX(10px);
+  box-shadow: 0 10px 30px rgba(0, 188, 212, 0.1);
+}
+
+.stepNumber {
+  background: linear-gradient(45deg, #00BCD4, #0097A7);
+  color: #ffffff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  flex-shrink: 0;
+  box-shadow: 0 4px 15px rgba(0, 188, 212, 0.3);
+}
+
+.stepContent {
+  flex: 1;
+}
+
+.stepContent h3 {
+  color: #00BCD4;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.stepContent p {
+  color: #cccccc;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.downloadLinks {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.downloadBtn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+
+.steam {
+  background: #1b2838;
+  color: #66c0f4;
+  border: 2px solid #66c0f4;
+}
+
+.steam:hover {
+  background: #66c0f4;
+  color: #1b2838;
+}
+
+.epic {
+  background: #2a2a2a;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.epic:hover {
+  background: #ffffff;
+  color: #2a2a2a;
+}
+
+.fivem {
+  background: #f40552;
+  color: #ffffff;
+  border: 2px solid #f40552;
+}
+
+.fivem:hover {
+  background: transparent;
+  color: #f40552;
+}
+
+.note {
+  background: rgba(255, 193, 7, 0.1);
+  border: 1px solid rgba(255, 193, 7, 0.3);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1rem;
+  color: #FFC107;
+}
+
+.stepList {
+  list-style: none;
+  padding: 0;
+}
+
+.stepList li {
+  color: #cccccc;
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.stepList li::before {
+  content: '✓';
+  color: #00BCD4;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.serverInfo {
+  background: rgba(0, 188, 212, 0.1);
+  border: 1px solid rgba(0, 188, 212, 0.3);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 1rem;
+}
+
+.serverDetail {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.serverDetail strong {
+  color: #00BCD4;
+  min-width: 120px;
+}
+
+.copyable {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-family: monospace;
+  color: #ffffff;
+  flex: 1;
+}
+
+.copyBtn {
+  background: #00BCD4;
+  border: none;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+}
+
+.copyBtn:hover {
+  background: #0097A7;
+}
+
+.troubleshooting {
+  padding: 5rem 0;
+  background: #0a0a0a;
+}
+
+.troubleshooting h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 3rem;
+  font-weight: bold;
+}
+
+.faqGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.faqCard {
+  background: linear-gradient(145deg, rgba(255, 68, 68, 0.1), rgba(255, 68, 68, 0.05));
+  border: 1px solid rgba(255, 68, 68, 0.2);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.faqCard:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 68, 68, 0.4);
+  box-shadow: 0 15px 30px rgba(255, 68, 68, 0.15);
+}
+
+.faqCard h3 {
+  color: #ff4444;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.faqCard ul {
+  list-style: none;
+  padding: 0;
+}
+
+.faqCard li {
+  color: #cccccc;
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.faqCard li::before {
+  content: '•';
+  color: #ff4444;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.support {
+  padding: 4rem 0;
+  background: linear-gradient(180deg, #111111 0%, #0a0a0a 100%);
+}
+
+.supportBox {
+  background: linear-gradient(145deg, rgba(255, 215, 0, 0.1), rgba(255, 215, 0, 0.05));
+  border: 2px solid rgba(255, 215, 0, 0.3);
+  border-radius: 20px;
+  padding: 3rem;
+  text-align: center;
+}
+
+.supportBox h3 {
+  color: #ffd700;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.supportBox p {
+  color: #cccccc;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.supportButtons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.discordBtn {
+  background: #5865f2;
+  color: #ffffff;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.discordBtn:hover {
+  background: #4752c4;
+  transform: translateY(-2px);
+}
+
+.ticketBtn {
+  background: transparent;
+  color: #ffd700;
+  border: 2px solid #ffd700;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.ticketBtn:hover {
+  background: #ffd700;
+  color: #000000;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 6rem 0 4rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .reqGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .step {
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .stepNumber {
+    align-self: flex-start;
+  }
+
+  .downloadLinks {
+    flex-direction: column;
+  }
+
+  .serverDetail {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .copyable {
+    width: 100%;
+  }
+
+  .faqGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .supportButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .discordBtn,
+  .ticketBtn {
+    width: 100%;
+    max-width: 250px;
+  }
+}
